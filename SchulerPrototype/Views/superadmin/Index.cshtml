@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "SuperAdmin";
+}
+
+<div class="container">
+    <br>
+    <br>
+    <div class="page-header" style="color: #000033">
+        <h2><strong>Super Admin Management</strong></h2><br/>
+    </div>
+    <!-- your code start here -->
+    <!-- Please observe indention -->
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 center-block">
+            <a href="{{URL::Route('dashboard')}}">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="{!! asset('assets/images/Super Admin/v5/dashboard.png') !!}" height="100" width="100" alt="">
+                    <div class="overlay">
+                        <h2>I</h2>
+                        <p class="info">
+                            Provides in-depth data analysis, organizes and presents information of every data inside the school.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 center-block">
+            <a href="{{URL::Route('admin')}}">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="{!! asset('assets/images/Super Admin/v5/administration.png') !!}" height="100" width="100" alt="">
+                    <div class="overlay">
+                        <h2>Administration</h2>
+                        <p class="info">
+                            Manage and assigning users to groups, and provide selective access to individual users.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

@@ -10,7 +10,7 @@ namespace SchulerPrototype.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return View("~/Views/superadmin/Index.cshtml");
         }
 
         public ActionResult About()
