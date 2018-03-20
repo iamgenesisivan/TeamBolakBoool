@@ -18,17 +18,6 @@ namespace SchulerPrototype
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
-            routes.MapRoute(
-                name: "student",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "task", action = "student", id = UrlParameter.Optional }
-            );
-            routes.MapRoute(
-               name: "teacher",
-               url: "{controller}/{action}/{id}",
-               defaults: new { controller = "task", action = "student", id = UrlParameter.Optional }
-            );
-
         }
     }
 }
