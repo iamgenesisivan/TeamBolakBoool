@@ -12,9 +12,9 @@
     <!-- Please observe indention -->
     <div class="row">
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 center-block">
-            <a href="{{URL::Route('dashboard')}}">
+            <a href="@Url.Action("Security", "superadmin")">
                 <div class="hovereffect">
-                    <img class="img-responsive" src="~/Content/images/calendar.png"  height="100" width="100" alt=""/>
+                    <img class="img-responsive" src="~/Content/images/calendar.png" height="100" width="100" alt="" />
                     <div class="overlay">
                         <h2>In & Out</h2>
                         <p class="info">
@@ -25,7 +25,7 @@
             </a>
         </div>
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 center-block">
-            <a href="{{URL::Route('admin')}}">
+            <a href="@Url.Action("Teacher", "superadmin")">
                 <div class="hovereffect">
                     <img class="img-responsive" src="~/Content/images/clock.png" height="100" width="100" alt="" />
                     <div class="overlay">
