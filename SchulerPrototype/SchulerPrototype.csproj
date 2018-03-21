@@ -143,6 +143,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\superadminController.cs" />
+    <Compile Include="Controllers\TeacherController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -157,23 +158,23 @@
     <Content Include="Content\images\clock.png" />
     <Content Include="Content\images\security.png" />
     <Content Include="Content\images\teacher.png" />
-    <Content Include="Content\js\Security\dashboard.js" />
-    <Content Include="Content\js\Security\noidhistory.js" />
-    <Content Include="Content\js\Security\noidlist.js" />
-    <Content Include="Content\js\Security\visitorhistory.js" />
-    <Content Include="Content\js\Teacher\classgradingmngt.js" />
-    <Content Include="Content\js\Teacher\dashboard.js" />
-    <Content Include="Content\js\Teacher\messagescalendar.js" />
-    <Content Include="Content\js\Teacher\tclassattendance.js" />
-    <Content Include="Content\js\Teacher\tclassprog.js" />
-    <Content Include="Content\js\Teacher\tclasssched.js" />
-    <Content Include="Content\js\Teacher\teacherlv.js" />
-    <Content Include="Content\js\Teacher\teachermngt.js" />
-    <Content Include="Content\js\Teacher\tlessonplan.js" />
-    <Content Include="Content\js\Teacher\tstudentgrades.js" />
-    <Content Include="Content\js\Teacher\tstudgradeschool.js" />
-    <Content Include="Content\js\Teacher\tstudgradesdeped.js" />
-    <Content Include="Content\js\Teacher\tstudprog.js" />
+    <Content Include="Scripts\js\Security\dashboard.js" />
+    <Content Include="Scripts\js\Security\noidhistory.js" />
+    <Content Include="Scripts\js\Security\noidlist.js" />
+    <Content Include="Scripts\js\Security\visitorhistory.js" />
+    <Content Include="Scripts\js\Teacher\classgradingmngt.js" />
+    <Content Include="Scripts\js\Teacher\dashboard.js" />
+    <Content Include="Scripts\js\Teacher\messagescalendar.js" />
+    <Content Include="Scripts\js\Teacher\tclassattendance.js" />
+    <Content Include="Scripts\js\Teacher\tclassprog.js" />
+    <Content Include="Scripts\js\Teacher\tclasssched.js" />
+    <Content Include="Scripts\js\Teacher\teacherlv.js" />
+    <Content Include="Scripts\js\Teacher\teachermngt.js" />
+    <Content Include="Scripts\js\Teacher\tlessonplan.js" />
+    <Content Include="Scripts\js\Teacher\tstudentgrades.js" />
+    <Content Include="Scripts\js\Teacher\tstudgradeschool.js" />
+    <Content Include="Scripts\js\Teacher\tstudgradesdeped.js" />
+    <Content Include="Scripts\js\Teacher\tstudprog.js" />
     <Content Include="Content\logonatin.png" />
     <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
@@ -195,6 +196,7 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -250,7 +252,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49760</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

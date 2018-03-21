@@ -6,10 +6,10 @@
              },
              "orderCellsTop": false,
              "searchHighlight" : true,
-             "ordering": false,
+             "ordering": false
            });
            $('#search').keyup(function(){
-                 oTable.search($(this).val()).draw() ;
+                 oTable.search($(this).val()).draw();
            });
            $(".dataTables_filter").hide();
            oTable.on('order.dt search.dt', function(){
@@ -18,8 +18,9 @@
                cell.innerHTML = i+1;
                } );
            }).draw();
+         });
 
-      <!-- <script type="text/javascript">
+
          $('#grades').DataTable( {
              autoFill: {
                  columns: ':not(:first-child)'
@@ -27,10 +28,10 @@
              "orderCellsTop": false,
              "searchHighlight" : true,
              "ordering": false,
-             "filter": false,
+             "filter": false
 
          } );
-      </script> -->
+ 
 
          $('#grades1').DataTable( {
              autoFill: {
@@ -42,6 +43,6 @@
              "bPaginate": false,
              "info": false,
              "ordering": false,
-             "filter": false,
+             "filter": false
 
          } );

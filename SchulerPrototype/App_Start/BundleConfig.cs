@@ -9,7 +9,7 @@ namespace SchulerPrototype
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/Scripts/jquery.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -25,20 +25,20 @@ namespace SchulerPrototype
 
 
             bundles.Add(new ScriptBundle("~/bundles/teacherjs").Include(
-                      "~/Content/js/Teacher/classgradingmngt.js",
-                      "~/Content/js/Teacher/dashboard.js",
-                      "~/Content/js/Teacher/messagescalendar.js",
-                      "~/Content/js/Teacher/tclassattendance.js",
-                      "~/Content/js/Teacher/tclassprog.js",
-                      "~/Content/js/Teacher/tclasssched.js",
-                      "~/Content/js/Teacher/teacherlv.js",
-                      "~/Content/js/Teacher/dashboard.js",
-                      "~/Content/js/Teacher/teachermngt.js",
-                      "~/Content/js/Teacher/tlessonplan.js",
-                      "~/Content/js/Teacher/tstudentgrades.js",
-                      "~/Content/js/Teacher/tstudgradeschool.js",
-                      "~/Content/js/Teacher/tstudprog.js",
-                      "~/Content/js/Teacher/tstudgradesdeped.js"));
+                      "~/Scripts/js/Teacher/classgradingmngt.js",
+                      "~/Scripts/js/Teacher/dashboard.js",
+                      "~/Scripts/js/Teacher/messagescalendar.js",
+                      "~/Scripts/js/Teacher/tclassattendance.js",
+                      "~/Scripts/js/Teacher/tclassprog.js",
+                      "~/Scripts/js/Teacher/tclasssched.js",
+                      "~/Scripts/js/Teacher/teacherlv.js",
+                      "~/Scripts/js/Teacher/dashboard.js",
+                      "~/Scripts/js/Teacher/teachermngt.js",
+                      "~/Scripts/js/Teacher/tlessonplan.js",
+                      "~/Scripts/js/Teacher/tstudentgrades.js",
+                      "~/Scripts/js/Teacher/tstudgradeschool.js",
+                      "~/Scripts/js/Teacher/tstudprog.js",
+                      "~/Scripts/js/Teacher/tstudgradesdeped.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/securityjs").Include(
                       "~/Content/js/Security/dashboard.js",
