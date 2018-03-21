@@ -1,5 +1,4 @@
 ﻿@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-
 nav.navbar-findcond {
     background: linear-gradient(-10deg, #a1dbf7, #00344c);
     border-color: linear-gradient(-90deg, #a1dbf7, #004a6d);
@@ -13,9 +12,7 @@ nav.navbar-findcond {
     nav.navbar-findcond ul.navbar-nav a {
         font-weight: bold;
         color: #02384f;
-        border-style: solid;
-        border-width: 0 0 0 0;
-        border-color: #fff;
+        border: 0 solid #fff;
     }
 
         nav.navbar-findcond ul.navbar-nav a:hover,
