@@ -9,10 +9,22 @@ namespace SchulerPrototype
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery.min.js"));
+                        "~/Scripts/jquery-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
+
+            bundles.Add(new ScriptBundle("~/bundles/datatables").Include(
+                        "~/Content/DataTables/jquery.dataTables.js",
+                        "~/Content/DataTables/datatables.bootstrap.js",
+                        "~/Content/DataTables/dataTables.buttons.min.js",
+                        "~/Content/DataTables/buttons.bootstrap.min.js",
+                        "~/Content/DataTables/buttons.html5.min.js",
+                        "~/Content/DataTables/buttons.print.min.js",
+                        "~/Content/DataTables/dataTables.fixedColumns.min.js",
+                        "~/Content/DataTables/dataTables.fixedHeader.min.js",
+                        "~/Content/DataTables/dataTables.keyTable.min.js",
+                        "~/Content/DataTables/dataTables.scroller.min.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at https://modernizr.com to pick only the tests you need.
@@ -25,9 +37,6 @@ namespace SchulerPrototype
 
 
             bundles.Add(new ScriptBundle("~/bundles/teacherjs").Include(
-                      "~/Scripts/js/Teacher/classgradingmngt.js",
-                      "~/Scripts/js/Teacher/dashboard.js",
-                      "~/Scripts/js/Teacher/messagescalendar.js",
                       "~/Scripts/js/Teacher/tclassattendance.js",
                       "~/Scripts/js/Teacher/tclassprog.js",
                       "~/Scripts/js/Teacher/tclasssched.js",
