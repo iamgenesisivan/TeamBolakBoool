@@ -55,8 +55,6 @@ namespace SchulerPrototype
                       "~/Content/js/Security/noidlist.js",
                       "~/Content/js/Security/visitorhistory.js"));
 
-
-
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/style.css"));
