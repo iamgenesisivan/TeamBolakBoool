@@ -23,6 +23,31 @@ namespace SchulerPrototype
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
+
+            bundles.Add(new ScriptBundle("~/bundles/teacherjs").Include(
+                      "~/Content/js/Teacher/classgradingmngt.js",
+                      "~/Content/js/Teacher/dashboard.js",
+                      "~/Content/js/Teacher/messagescalendar.js",
+                      "~/Content/js/Teacher/tclassattendance.js",
+                      "~/Content/js/Teacher/tclassprog.js",
+                      "~/Content/js/Teacher/tclasssched.js",
+                      "~/Content/js/Teacher/teacherlv.js",
+                      "~/Content/js/Teacher/dashboard.js",
+                      "~/Content/js/Teacher/teachermngt.js",
+                      "~/Content/js/Teacher/tlessonplan.js",
+                      "~/Content/js/Teacher/tstudentgrades.js",
+                      "~/Content/js/Teacher/tstudgradeschool.js",
+                      "~/Content/js/Teacher/tstudprog.js",
+                      "~/Content/js/Teacher/tstudgradesdeped.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/securityjs").Include(
+                      "~/Content/js/Security/dashboard.js",
+                      "~/Content/js/Security/noidhistory.js",
+                      "~/Content/js/Security/noidlist.js",
+                      "~/Content/js/Security/visitorhistory.js"));
+
+
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/style.css"));
