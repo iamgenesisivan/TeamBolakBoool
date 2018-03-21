@@ -18,6 +18,11 @@ namespace SchulerPrototype
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "superadmin", action = "Index", id = UrlParameter.Optional }
             );
+            routes.MapRoute(
+                name: "Security",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Security", action = "InOut", id = UrlParameter.Optional }
+            );
         }
     }
 }
