@@ -384,7 +384,6 @@
     <Content Include="Content\images\logonatinopa.png" />
     <Content Include="Content\images\security.png" />
     <Content Include="Content\images\teacher.png" />
-    <Content Include="Scripts\js\Security\chart.js" />
     <Content Include="Scripts\js\Security\dashboard.js" />
     <Content Include="Scripts\js\Security\noidhistory.js" />
     <Content Include="Scripts\js\Security\noidlist.js" />
