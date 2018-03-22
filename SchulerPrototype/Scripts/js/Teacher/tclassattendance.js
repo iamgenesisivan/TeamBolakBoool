@@ -315,8 +315,8 @@
 
                  else if ($(this).data('value') === "Absent") {
                      $('#attendanceAbsent').hide();
-                     $('#attendanceButton').removeClass('text-success');
-                     $('#attendanceButton').addClass('text-info');
+                     $('#attendanceButton').removeClass('text-info');
+                     $('#attendanceButton').addClass('text-danger');
                      $('#attendanceExcused').show();
                  }
              });
