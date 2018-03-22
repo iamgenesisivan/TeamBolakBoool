@@ -309,14 +309,14 @@
                  if ($(this).data('value') === "Excused") {
                      $('#attendanceExcused').hide();
                      $('#attendanceButton').removeClass('text-danger');
-                     $('#attendanceButton').addClass('text-success');
+                     $('#attendanceButton').addClass('text-info');
                      $('#attendanceAbsent').show();
                  }
 
                  else if ($(this).data('value') === "Absent") {
                      $('#attendanceAbsent').hide();
                      $('#attendanceButton').removeClass('text-success');
-                     $('#attendanceButton').addClass('text-danger');
+                     $('#attendanceButton').addClass('text-info');
                      $('#attendanceExcused').show();
                  }
              });
