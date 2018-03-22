@@ -1,105 +1,111 @@
 ﻿
 
 @{
-    ViewBag.Title = "Security";
+   ViewBag.Title = "Security Dashboard";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+<style type="text/css">
+   .container-2:before{display: table; content: " "; } .container-2:after, {clear: both;} .date-picker{border-color: #138871; color: #fff; background-color: #149077; margin-top: -7px; border-radius: 0px; margin-right: -15px; } .circle-tile {margin-bottom: 15px; text-align: center; } .circle-tile-heading {position: relative; width: 80px; height: 80px; margin: 0 auto -40px; border: 3px solid rgba(255,255,255,0.3); border-radius: 100%; color: #fff; transition: all ease-in-out .3s; } /* -- Background Helper Classes */ /* Use these to cuztomize the background color of a div. These are used along with tiles, or any other div you want to customize. */ .dark-blue {background-color: #34495e; } .green {background-color: #16a085; } .blue {background-color: #2980b9; } .orange {background-color: #f39c12; } .red {background-color: #e74c3c; } .purple {background-color: #8e44ad; } .dark-gray {background-color: #7f8c8d; } .gray {background-color: #95a5a6; } .light-gray {background-color: #bdc3c7; } .yellow {background-color: #f1c40f; } /* -- Text Color Helper Classes */ .text-dark-blue {color: #34495e; } .text-green {color: #16a085; } .text-blue {color: #2980b9; } .text-orange {color: #f39c12; } .text-red {color: #e74c3c; } .text-purple {color: #8e44ad; } .text-faded {color: rgba(255,255,255,0.7); } .circle-tile-heading .fa {line-height: 80px; } .circle-tile-content {padding-top: 50px; } .circle-tile-description {text-transform: uppercase; } .text-faded {color: rgba(255,255,255,0.7); } .circle-tile-number {padding: 5px 0 15px; font-size: 26px; font-weight: 700; line-height: 1; } .circle-tile-footer {display: block; padding: 5px; color: rgba(255,255,255,0.5); background-color: rgba(0,0,0,0.1); transition: all ease-in-out .3s; } .circle-tile-footer:hover {text-decoration: none; color: rgba(255,255,255,0.5); background-color: rgba(0,0,0,0.2); } .db-container{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+</style>
 <div class="container" >
-    <br>
-    <br>
-    <div class="page-header" style="color: #000033"><h2><strong>Security Management</strong></h2></div>
-      <ol class="breadcrumb" style="background-color: #D9EDF7">
-          <li><a href="{{URL::Route('security')}}"><i class="fa fa-home fa-2x" aria-hidden="true"></i> Home</a></li>
-          <li>Dashboard</li>
-      </ol>
-     <section>
-        <!-- your code start here -->
-        <!-- Please observe indention -->
-        <div class="col-lg-12">
-          <div class="container-2">
-           <div id="page-wrapper">
-              <div class="row" >
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="circle-tile">
-                       <a href="#">
-                          <div class="circle-tile-heading green db-container">
-                             <i class="fa fa-users fa-fw fa-3x"></i>
-                          </div>
-                       </a>
-                       <div class="circle-tile-content green db-container">
-                          <div class="circle-tile-description text-faded">
-                             Daily Visitors
-                          </div>
-                          <div class="circle-tile-number text-faded">
-                             34
-                          </div>
-                       </div>
-                    </div>
-                 </div>
+   <br>
+   <br>
+   <div class="page-header" style="color: #000033"><h2><strong>Security Management</strong></h2></div>
+   <ol class="breadcrumb" style="background-color: #D9EDF7">
+      <li><a href="@Url.Action("Security", $"superadmin")"><i class="fa fa-home fa-2x" aria-hidden="true"></i> Home</a></li>
+      <li>Dashboard</li>
+   </ol>
+   <section>
+      <!-- your code start here -->
+      <!-- Please observe indention -->
+      <div class="col-lg-12">
+         <div class="container-2">
+            <div id="page-wrapper">
+               <div class="row" >
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                     <div class="circle-tile">
+                        <a href="#">
+                           <div class="circle-tile-heading green db-container">
+                              <i class="fa fa-users fa-fw fa-3x"></i>
+                           </div>
+                        </a>
+                        <div class="circle-tile-content green db-container">
+                           <div class="circle-tile-description text-faded">
+                              Daily Visitors
+                           </div>
+                           <div class="circle-tile-number text-faded">
+                              34
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                  
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="circle-tile">
-                       <a href="#">
-                          <div class="circle-tile-heading blue db-container">
-                             <i class="fa fa-users fa-fw fa-3x"></i>
-                          </div>
-                       </a>
-                       <div class="circle-tile-content blue db-container">
-                          <div class="circle-tile-description text-faded">
-                             Weekly Visitors
-                          </div>
-                          <div class="circle-tile-number text-faded">
-                             240
-                             <span id="sparklineB"></span>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="circle-tile">
-                       <a href="#">
-                          <div class="circle-tile-heading red db-container">
-                             <i class="fa fa-users fa-fw fa-3x"></i>
-                          </div>
-                       </a>
-                       <div class="circle-tile-content red db-container">
-                          <div class="circle-tile-description text-faded">
-                             Monthly Visitors
-                          </div>
-                          <div class="circle-tile-number text-faded">
-                             1987
-                             <span id="sparklineC"></span>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
-              </div>
-           </div>
-           <!-- page-wrapper END-->
-          </div>
-        </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                     <div class="circle-tile">
+                        <a href="#">
+                           <div class="circle-tile-heading blue db-container">
+                              <i class="fa fa-users fa-fw fa-3x"></i>
+                           </div>
+                        </a>
+                        <div class="circle-tile-content blue db-container">
+                           <div class="circle-tile-description text-faded">
+                              Weekly Visitors
+                           </div>
+                           <div class="circle-tile-number text-faded">
+                              240
+                              <span id="sparklineB"></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                     <div class="circle-tile">
+                        <a href="#">
+                           <div class="circle-tile-heading red db-container">
+                              <i class="fa fa-users fa-fw fa-3x"></i>
+                           </div>
+                        </a>
+                        <div class="circle-tile-content red db-container">
+                           <div class="circle-tile-description text-faded">
+                              Monthly Visitors
+                           </div>
+                           <div class="circle-tile-number text-faded">
+                              1987
+                              <span id="sparklineC"></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- page-wrapper END-->
+         </div>
+      </div>
          
-          <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
-              <div class="db-container" style="position: relative; width:auto;">
-                <canvas id="myChartline" style="margin-bottom: 50px;"></canvas>
-              </div>
-          </div>
-          <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
-              <div class="db-container" style="position: relative; width:auto;">
-                <canvas id="myChartpie" height="215px"></canvas>
-              </div>
-          </div>
-          <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
-              <div class="db-container" style="position: relative; width:auto;">
-                <canvas id="myChartbar" style="margin-bottom: 50px;"></canvas>
-              </div>
-          </div>
-          <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
-              <div class="db-container" style="position: relative; width:auto;">
-                <canvas id="myBarGroupChart" height="215px"></canvas>
-              </div>
-          </div>
-     </section>
+      <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+         <div class="db-container" style="position: relative; width:auto;">
+            <canvas id="myChartline" style="margin-bottom: 50px;"></canvas>
+         </div>
+      </div>
+      <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+         <div class="db-container" style="position: relative; width:auto;">
+            <canvas id="myChartpie" height="215px"></canvas>
+         </div>
+      </div>
+      <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+         <div class="db-container" style="position: relative; width:auto;">
+            <canvas id="myChartbar" style="margin-bottom: 50px;"></canvas>
+         </div>
+      </div>
+      <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+         <div class="db-container" style="position: relative; width:auto;">
+            <canvas id="myBarGroupChart" height="215px"></canvas>
+         </div>
+      </div>
+   </section>
    
-  </div>
+</div>
+@Scripts.Render("~/Scripts/js/Security/chart.js")
+@Scripts.Render("~/Scripts/js/jquery-1.10.2.js")
+@Scripts.Render("~/Scripts/js/jquery.min.js")
+@Scripts.Render("~/Scripts/js/Security/dashboard.js")
