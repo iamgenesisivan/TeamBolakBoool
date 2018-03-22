@@ -61,7 +61,7 @@
         <hr />
 
     </div>
-    <footer class="navbar-fixed-bottom" style=" background: linear-gradient(-90deg,  #00344c , #a1dbf7)!important;">
+    <footer class="navbar-fixed-bottom" style=" background: linear-gradient(-90deg,  #00344c , #a1dbf7)!important; z-index: 1000;">
         <div class="container-fluid">
             <p class="pull-right " style="padding-top: .5%; padding-right: 3%; font-size: 10px; font-weight: bolder; color: #fff;">&copy; 2016 - Powered by <a href="http://www.simplevia.com" style="color: #21d23e;">QuickTrack</a></p>
         </div>
@@ -70,5 +70,6 @@
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/datatables")
     @Scripts.Render("~/Scripts/js/Teacher/tclassattendance.js")
+    @RenderSection("scripts", required: false)
 </body>
 </html>
