@@ -2,9 +2,10 @@
    ViewBag.Title = "In and Out Log";
    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@Styles.Render("~/Content/css/Security/style.css")
 <br><br>
 <ol class="breadcrumb mt-50p">
-   <li><a href="@Url.Action("Security", $"superadmin")"><i class="fa fa-home fa-2x" aria-hidden="true"></i> Home</a></li>
+   <li><a href="@Url.Action($"Index", $"superadmin")"><i class="fa fa-home fa-2x" aria-hidden="true"></i> Home</a></li>
    <li>Visitor History</li>
 </ol>
 

@@ -303,6 +303,7 @@
     <Content Include="Content\CSSDataTables\select.jqueryui.min.css" />
     <Content Include="Content\CSSDataTables\select.semanticui.css" />
     <Content Include="Content\CSSDataTables\select.semanticui.min.css" />
+    <Content Include="Content\css\Security\style.css" />
     <Content Include="Content\DataTables\autoFill.bootstrap.js" />
     <Content Include="Content\DataTables\autoFill.bootstrap.min.js" />
     <Content Include="Content\DataTables\autoFill.bootstrap4.js" />
@@ -387,6 +388,7 @@
     <Content Include="Content\images\security.png" />
     <Content Include="Content\images\teacher.png" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Scripts\js\Security\chart.js" />
     <Content Include="Scripts\js\Security\dashboard.js" />
     <Content Include="Scripts\js\Security\noidhistory.js" />
     <Content Include="Scripts\js\Security\noidlist.js" />
