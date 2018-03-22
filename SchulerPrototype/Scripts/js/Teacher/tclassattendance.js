@@ -300,5 +300,24 @@
               function (cell, i) {
                cell.innerHTML = i+1;
                } );
-           }).draw();
-         });
+             }).draw();
+
+             $(".dropdown-menu li a").click(function () {
+                 $(this).parents(".dropdown").find('#attendanceButton').html($(this).text() + ' <span class="caret"></span>');
+                 $(this).parents(".dropdown").find('#attendanceButton').val($(this).data('value'));
+
+                 if ($(this).data('value') === "Excused") {
+                     $('#attendanceExcused').hide();
+                     $('#attendanceButton').removeClass('text-danger');
+                     $('#attendanceButton').addClass('text-info');
+                     $('#attendanceAbsent').show();
+                 }
+
+                 else if ($(this).data('value') === "Absent") {
+                     $('#attendanceAbsent').hide();
+                     $('#attendanceButton').removeClass('text-info');
+                     $('#attendanceButton').addClass('text-danger');
+                     $('#attendanceExcused').show();
+                 }
+             });
+});
