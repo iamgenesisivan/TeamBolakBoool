@@ -80,7 +80,7 @@ nav.navbar-findcond {
 }*/
 body {
     background-color: #FFFFF1;
-    background-image: url("../../images/logonatinopa.png");
+    background-image: url('images/logonatinopa.png');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -90,7 +90,7 @@ body {
 @media only screen and (max-width: 1200px) {
     body {
         background-color: #FFFFF1;
-        background-image: url("../../images/logonatinopa.png");
+        background-image: url('images/logonatinopa.png');
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: 35% 60%;
@@ -156,11 +156,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .dataTable thead {
     background-color: #84ace0;
-    opacity:
 }
 
 .dataTable th {
-    font;
     color: #fff;
     font-weight: normal;
 }

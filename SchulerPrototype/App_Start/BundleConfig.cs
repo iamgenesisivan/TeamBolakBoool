@@ -35,7 +35,6 @@ namespace SchulerPrototype
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
-
             bundles.Add(new ScriptBundle("~/bundles/teacherjs").Include(
                       "~/Scripts/js/Teacher/tclassattendance.js",
                       "~/Scripts/js/Teacher/tclassprog.js",
@@ -59,6 +58,8 @@ namespace SchulerPrototype
                       "~/Content/bootstrap.css",
                       "~/Content/style.css"));
 
+            bundles.Add(new StyleBundle("~/Content/datatables").Include(
+                      "~/Content/CSSDataTables/dataTables.bootstrap.min.css"));
         }
     }
 }
