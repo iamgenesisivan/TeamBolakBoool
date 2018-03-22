@@ -30,7 +30,6 @@
                <th>ID Image</th>
                <th >Type</th>
                <th >Name</th>
-               <th >Reason</th>
                <th >Date & Time In</th>
                <th >Date & Time Out</th>
                <th> </th>
@@ -41,36 +40,48 @@
                <td></td>
                <td>0003</td>
                <td>
-                  <div class="mx-auto text-center"><img src="{!! asset('assets/images/principal1.png') !!}" height="25"></div>
+                  <div class="mx-auto text-center"><img src="~/Content/images/teacher.png" height="25"></div>
                </td>
                <td>Parent</td>
                <td>Genesis Ivan J. Aquino</td>
-               <td>Parents Conference</td>
                <td>2017/09/21 10:00am</td>
                <td>2017/09/21 10:30am</td>
                <td class="text-center"><button type="button" class="btn btn-sm btn-info" data-toggle="modal" data-target="#ViewDetails1">View Details</button></td>
                <div id="ViewDetails1" class="modal fade" role="dialog">
                   <div class="modal-dialog modal-lg">
-
                      <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header bg-primary">
                            <button type="button" class="close" data-dismiss="modal">&times;</button>
                            <h4 class="modal-title">Genesis Ivan J. Aquino</h4>
                         </div>
-                        <div class="modal-body row">
-                            <div class="col-xs-6 text-center">
-                                    <img width="200px" src="~/Content/images/teacher.png">
-                            </div>
-                            <div class="col-xs-6">
-                               <p><span class="pull-right">Aquino</span><b>Lastname:</b></p>
-                               <p><span class="pull-right">Genesis Ivan</span><b>Firstname:</b></p>
-                               <p><span class="pull-right">Joson</span><b>Middlename:</b></p>
-                               <p><span class="pull-right">Parent</span><b>Reason:</b></p>
-                               <p><span class="pull-right">2017/09/21</span><b>Date In:</b></p>
-                               <p><span class="pull-right">10:00 am</span><b>Time In:</b></p>
-                               <p><span class="pull-right">2017/09/21</span><b>Date Out:</b></p>
-                               <p><span class="pull-right">10:30 am</span><b>Time Out:</b></p>
-                            </div>
+                        <div class="modal-body">
+                           <div class="row">
+                              <div class="col-sm-4 text-center">
+                                  <img class="img-responsive" src="~/Content/images/teacher.png">
+                               </div>
+                              <div class="col-sm-8">
+                                 <div class="well">
+                                    <p><span class="pull-right">Aquino</span><b>Lastname:</b></p>
+                                    <p><span class="pull-right">Genesis Ivan</span><b>Firstname:</b></p>
+                                    <p><span class="pull-right">Joson</span><b>Middlename:</b></p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row mt-30p">
+                              <div class="col-sm-6">
+                                 <div class="well">
+                                    <p><span class="pull-right">2017/09/21</span><b>Date In:</b></p>
+                                    <p><span class="pull-right">10:00 am</span><b>Time In:</b></p>
+                                 </div>
+                              </div>
+                              <div class="col-sm-6">
+                                 <div class="well">
+                                 <p><span class="pull-right">2017/09/21</span><b>Date Out:</b></p>
+                                    <p><span class="pull-right">10:30 am</span><b>Time Out:</b></p>
+                                 </div>
+                              </div>
+                           </div>
+                           
                         </div>
                         <div class="modal-footer">
                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -83,36 +94,48 @@
                <td></td>
                <td>0001</td>
                <td>
-                  <div class="mx-auto text-center"><img src="{!! asset('assets/images/principal1.png') !!}" height="25"></div>
+                  <div class="mx-auto text-center"><img src="~/Content/images/clock.png" height="25"></div>
                </td>
                <td>Delivery</td>
                <td>Mayson Labuntog</td>
-               <td>Delivery</td>
                <td>2017/09/22 11:10am</td>
                <td>2017/09/22 11:23am</td>
                <td class="text-center"><button type="button" class="btn btn-sm btn-info" data-toggle="modal" data-target="#ViewDetails2">View Details</button></td>
                <div id="ViewDetails2" class="modal fade" role="dialog">
                   <div class="modal-dialog modal-lg">
-
                      <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header bg-primary">
                            <button type="button" class="close" data-dismiss="modal">&times;</button>
                            <h4 class="modal-title">Mayson Labuntog</h4>
                         </div>
-                        <<div class="modal-body row">
-                            <div class="col-xs-6 text-center">
-                                    <img width="200px" src="~/Content/images/teacher.png">
-                            </div>
-                            <div class="col-xs-6">
-                               <p><span class="pull-right">Labuntog</span><b>Lastname:</b></p>
-                               <p><span class="pull-right">Mayson</span><b>Firstname:</b></p>
-                               <p><span class="pull-right"></span><b>Middlename:</b></p>
-                               <p><span class="pull-right">Delivery</span><b>Reason:</b></p>
-                               <p><span class="pull-right">2017/09/22</span><b>Date In:</b></p>
-                               <p><span class="pull-right">11:10 am</span><b>Time In:</b></p>
-                               <p><span class="pull-right">2017/09/22</span><b>Date Out:</b></p>
-                               <p><span class="pull-right">11:23 am</span><b>Time Out:</b></p>
-                            </div>
+                        <div class="modal-body">
+                           <div class="row">
+                              <div class="col-sm-4 text-center">
+                                 <img class="img-responsive" src="~/Content/images/clock.png">
+                              </div>
+                              <div class="col-sm-8">
+                                 <div class="well">
+                                    <p><span class="pull-right">Labuntog</span><b>Lastname:</b></p>
+                                    <p><span class="pull-right">Mayson</span><b>Firstname:</b></p>
+                                    <p><span class="pull-right"> </span><b>Middlename:</b></p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row mt-30p">
+                              <div class="col-sm-6">
+                                 <div class="well">
+                                    <p><span class="pull-right">2017/09/22</span><b>Date In:</b></p>
+                                    <p><span class="pull-right">11:10 am</span><b>Time In:</b></p>
+                                 </div>
+                              </div>
+                              <div class="col-sm-6">
+                                 <div class="well">
+                                    <p><span class="pull-right">2017/09/22</span><b>Date Out:</b></p>
+                                    <p><span class="pull-right">11:23 am</span><b>Time Out:</b></p>
+                                 </div>
+                              </div>
+                           </div>
+   
                         </div>
                         <div class="modal-footer">
                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -125,36 +148,48 @@
                <td></td>
                <td>0008</td>
                <td>
-                  <div class="mx-auto text-center"><img src="{!! asset('assets/images/principal1.png') !!}" height="25"></div>
+                  <div class="mx-auto text-center"><img src="~/Content/images/security.png" height="25"></div>
                </td>
-               <td>Police</td>
-               <td>SPO1 Reynard Chavez</td>
-               <td>Classroom Inspection</td>
+               <td>Student</td>
+               <td>Reynard Chavez</td>
                <td>2017/09/23 10:00am</td>
                <td>2017/09/23 10:20am</td>
                <td class="text-center"><button type="button" class="btn btn-sm btn-info" data-toggle="modal" data-target="#ViewDetails3">View Details</button></td>
                <div id="ViewDetails3" class="modal fade" role="dialog">
                   <div class="modal-dialog modal-lg">
-
                      <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header bg-primary">
                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                           <h4 class="modal-title">SPO1 Reynard Chavez</h4>
+                           <h4 class="modal-title">Reynard Chavez</h4>
                         </div>
-                        <div class="modal-body row">
-                            <div class="col-xs-6 text-center">
-                                    <img width="200px" src="~/Content/images/security.png">
-                            </div>
-                            <div class="col-xs-6">
-                               <p><span class="pull-right">Chavez</span><b>Lastname:</b></p>
-                               <p><span class="pull-right">Reynand</span><b>Firstname:</b></p>
-                               <p><span class="pull-right"></span><b>Middlename:</b></p>
-                               <p><span class="pull-right">Classroom Inspection</span><b>Reason:</b></p>
-                               <p><span class="pull-right">2017/09/23</span><b>Date In:</b></p>
-                               <p><span class="pull-right">10:00 am</span><b>Time In:</b></p>
-                               <p><span class="pull-right">2017/09/23</span><b>Date Out:</b></p>
-                               <p><span class="pull-right">10:20 am</span><b>Time Out:</b></p>
-                            </div>
+                        <div class="modal-body">
+                           <div class="row">
+                              <div class="col-sm-4 text-center">
+                                 <img class="img-responsive" src="~/Content/images/security.png">
+                              </div>
+                              <div class="col-sm-8">
+                                 <div class="well">
+                                    <p><span class="pull-right">Chavez</span><b>Lastname:</b></p>
+                                    <p><span class="pull-right">Reynard</span><b>Firstname:</b></p>
+                                    <p><span class="pull-right"></span><b>Middlename:</b></p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row mt-30p">
+                              <div class="col-sm-6">
+                                 <div class="well">
+                                    <p><span class="pull-right">2017/09/23</span><b>Date In:</b></p>
+                                    <p><span class="pull-right">10:00 am</span><b>Time In:</b></p>
+                                 </div>
+                              </div>
+                              <div class="col-sm-6">
+                                 <div class="well">
+                                    <p><span class="pull-right">2017/09/23</span><b>Date Out:</b></p>
+                                    <p><span class="pull-right">10:20 am</span><b>Time Out:</b></p>
+                                 </div>
+                              </div>
+                           </div>
+   
                         </div>
                         <div class="modal-footer">
                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
