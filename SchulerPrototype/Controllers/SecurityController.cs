@@ -9,5 +9,10 @@ namespace SchulerPrototype.Controllers
         {
             return View();
         }
+        // GET
+        public ActionResult dashboard()
+        {
+            return View();
+        }
     }
 }
