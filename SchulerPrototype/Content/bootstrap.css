@@ -5986,6 +5986,11 @@ button.close {
     width: 900px;
   }
 }
+@media (min-width: 1300px) {
+  .modal-lg {
+    width: 1200px;
+  }
+}
 .tooltip {
   position: absolute;
   z-index: 1070;
